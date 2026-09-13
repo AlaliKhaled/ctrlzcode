@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genix ID | تقنيات المستقبل نلهم بها الواقع</title>
+    <title>CtrlZCode | تقنيات المستقبل نلهم بها الواقع</title>
     <meta name="description" content="حلول برمجية وأنظمة ذكاء اصطناعي متكاملة صُممت وطُورت بأعلى المعايير الهندسية.">
-    <meta name="keywords" content="ID-Genix, AI Solutions, Digital Identity, Web Development, Apps, Data Analytics">
+    <meta name="keywords" content="CtrlZCode, AI Solutions, Digital Identity, Web Development, Apps, Data Analytics">
     <!-- Favicon -->
     <!-- Preload Critical Assets -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800;900&display=swap" as="style">
@@ -31,7 +31,7 @@
     </script>
     
     <!-- Open Graph & Social Share Meta Tags -->
-    <meta property="og:title" content="Genix ID | تقنيات المستقبل نلهم بها الواقع">
+    <meta property="og:title" content="CtrlZCode | تقنيات المستقبل نلهم بها الواقع">
     <meta property="og:description" content="نحن نصمم أنظمة وتجارب رقمية متكاملة مدعومة بالذكاء الاصطناعي لترتقي بأعمالك إلى آفاق غير مسبوقة.">
     <meta property="og:image" content="{{ url_for('static', filename='images/body1.webp', _external=True) }}">
     <meta property="og:url" content="https://genix-id.com">
@@ -39,7 +39,7 @@
     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Genix ID | تقنيات المستقبل نلهم بها الواقع">
+    <meta name="twitter:title" content="CtrlZCode | تقنيات المستقبل نلهم بها الواقع">
     <meta name="twitter:description" content="نحن نصمم أنظمة وتجارب رقمية متكاملة مدعومة بالذكاء الاصطناعي لترتقي بأعمالك إلى آفاق غير مسبوقة.">
     <meta name="twitter:image" content="{{ url_for('static', filename='images/body1.webp', _external=True) }}">
     <!-- Switch back to Cairo font as requested -->
@@ -89,8 +89,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
-            <a class="logo-container" href="/">
-                <span class="logo-id">ID</span><span class="logo-genix">Genix</span>
+            <a class="logo-container" href="/" dir="ltr" aria-label="CtrlZCode">
+                <span class="keycap">Ctrl</span><span class="keycap keycap--z">Z</span><span class="logo-code">Code</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars text-white fs-4"></i>
@@ -98,8 +98,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav_services">خدماتنا</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio" data-i18n="nav_portfolio">المعرض والذكاء الاصطناعي</a></li>
                     <li class="nav-item"><a class="nav-link" href="#why-us" data-i18n="nav_why_us">لماذا نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients" data-i18n="nav_clients">عملاؤنا</a></li>
                     <li class="nav-item dropdown ms-lg-3">
                         <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span id="current-lang"><span class="fi fi-sa me-1"></span> العربية</span>
@@ -128,7 +128,7 @@
                         نحن نصمم أنظمة وتجارب رقمية متكاملة مدعومة بالذكاء الاصطناعي المتقدم لترتقي بأعمالك إلى آفاق غير مسبوقة.
                     </p>
                     <div class="animate__animated animate__zoomIn animate__delay-2s">
-                        <a href="#portfolio" class="btn btn-glow"><span data-i18n="hero_btn">استكشف أعمالنا</span> <i class="fa-solid fa-arrow-left ms-2 dir-icon"></i></a>
+                        <a href="#clients" class="btn btn-glow"><span data-i18n="hero_btn">استكشف أعمالنا</span> <i class="fa-solid fa-arrow-left ms-2 dir-icon"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center px-0 d-flex justify-content-center">
@@ -239,127 +239,6 @@
         </div>
     </section>
 
-    <!-- Categorized Tab Portfolio Section -->
-    <section id="portfolio" class="container py-5 my-5">
-        <div class="text-center hidden-element" data-animation="animate__fadeInUp">
-            <h2 class="section-title" data-i18n="portfolio_title">معرض الأعمال</h2>
-            <p class="text-muted-custom mb-4" data-i18n="portfolio_desc">مجموعة من النماذج الإبداعية المولدة بأنظمة الذكاء الاصطناعي والمصممة لتلبية تطلعاتك.</p>
-        </div>
-        
-        <!-- Filter Tabs -->
-        <div class="portfolio-tabs-wrapper mb-5 hidden-element" data-animation="animate__fadeInUp" data-delay="0.2s">
-            <ul class="nav nav-pills justify-content-lg-center flex-nowrap pb-2 portfolio-tabs" id="portfolio-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active glass-btn" id="tab-premium" data-bs-toggle="pill" data-bs-target="#content-premium" type="button" role="tab" data-i18n="tab_premium">باقات احترافية</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link glass-btn" id="tab-media" data-bs-toggle="pill" data-bs-target="#content-media" type="button" role="tab" data-i18n="tab_media">إنتاج مرئي</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link glass-btn" id="tab-branding" data-bs-toggle="pill" data-bs-target="#content-branding" type="button" role="tab" data-i18n="tab_branding">هوية وويب</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link glass-btn" id="tab-general" data-bs-toggle="pill" data-bs-target="#content-general" type="button" role="tab" data-i18n="tab_general">خدمات عامة</button>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Tab Content -->
-        <div class="tab-content" id="portfolio-tabContent">
-            <!-- Premium Packages -->
-            <div class="tab-pane fade show active" id="content-premium" role="tabpanel">
-                <div class="d-flex justify-content-center align-items-center py-5">
-                    <div class="gallery-stack" onclick="document.getElementById('premium-trigger').click()">
-                        <div class="stack-bg stack-bg-3" style="background-image: url('{{ url_for('static', filename='portfolio/Premium-Packages4.png') }}'); background-size: cover; background-position: center; filter: brightness(0.4);"></div>
-                        <div class="stack-bg stack-bg-2" style="background-image: url('{{ url_for('static', filename='portfolio/Premium-Packages3.png') }}'); background-size: cover; background-position: center; filter: brightness(0.6);"></div>
-                        <div class="stack-bg stack-bg-1" style="background-image: url('{{ url_for('static', filename='portfolio/Premium-Packages2.png') }}'); background-size: cover; background-position: center; filter: brightness(0.8);"></div>
-                        <div class="front-cover portfolio-glass-card">
-                            <img src="{{ url_for('static', filename='portfolio/Premium-Packages1.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="Premium Packages Cover" loading="lazy">
-                            <div class="cover-overlay d-flex flex-column align-items-center justify-content-center">
-                                <i class="fa-solid fa-layer-group fs-1 text-white shadow-sm mb-3"></i>
-                                <span class="text-white fw-bold px-4 py-2 rounded-pill" style="letter-spacing: 1px; background: rgba(0,242,255,0.2); border: 1px solid rgba(0,242,255,0.4); backdrop-filter: blur(5px);">تصفح معرض الأعمال</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-none">
-                    {% for i in range(1, 9) %}
-                    <a href="{{ url_for('static', filename='portfolio/Premium-Packages' ~ i ~ '.png') }}" class="glightbox" data-gallery="portfolio-premium" {% if loop.first %}id="premium-trigger"{% endif %}></a>
-                    {% endfor %}
-                </div>
-            </div>
-            
-            <!-- Media Production -->
-            <div class="tab-pane fade" id="content-media" role="tabpanel">
-                <div class="d-flex justify-content-center align-items-center py-5">
-                    <div class="gallery-stack" onclick="document.getElementById('media-trigger').click()">
-                        <div class="stack-bg stack-bg-3" style="background-image: url('{{ url_for('static', filename='portfolio/Media-Production4.png') }}'); background-size: cover; background-position: center; filter: brightness(0.4);"></div>
-                        <div class="stack-bg stack-bg-2" style="background-image: url('{{ url_for('static', filename='portfolio/Media-Production3.png') }}'); background-size: cover; background-position: center; filter: brightness(0.6);"></div>
-                        <div class="stack-bg stack-bg-1" style="background-image: url('{{ url_for('static', filename='portfolio/Media-Production2.png') }}'); background-size: cover; background-position: center; filter: brightness(0.8);"></div>
-                        <div class="front-cover portfolio-glass-card">
-                            <img src="{{ url_for('static', filename='portfolio/Media-Production1.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="Media Production Cover" loading="lazy">
-                            <div class="cover-overlay d-flex flex-column align-items-center justify-content-center">
-                                <i class="fa-solid fa-layer-group fs-1 text-white shadow-sm mb-3"></i>
-                                <span class="text-white fw-bold px-4 py-2 rounded-pill" style="letter-spacing: 1px; background: rgba(0,242,255,0.2); border: 1px solid rgba(0,242,255,0.4); backdrop-filter: blur(5px);">تصفح معرض الأعمال</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-none">
-                    {% for i in range(1, 5) %}
-                    <a href="{{ url_for('static', filename='portfolio/Media-Production' ~ i ~ '.png') }}" class="glightbox" data-gallery="portfolio-media" {% if loop.first %}id="media-trigger"{% endif %}></a>
-                    {% endfor %}
-                </div>
-            </div>
-
-            <!-- Digital Branding -->
-            <div class="tab-pane fade" id="content-branding" role="tabpanel">
-                <div class="d-flex justify-content-center align-items-center py-5">
-                    <div class="gallery-stack" onclick="document.getElementById('branding-trigger').click()">
-                        <div class="stack-bg stack-bg-3" style="background-image: url('{{ url_for('static', filename='portfolio/Digital-Branding4.png') }}'); background-size: cover; background-position: center; filter: brightness(0.4);"></div>
-                        <div class="stack-bg stack-bg-2" style="background-image: url('{{ url_for('static', filename='portfolio/Digital-Branding3.png') }}'); background-size: cover; background-position: center; filter: brightness(0.6);"></div>
-                        <div class="stack-bg stack-bg-1" style="background-image: url('{{ url_for('static', filename='portfolio/Digital-Branding2.png') }}'); background-size: cover; background-position: center; filter: brightness(0.8);"></div>
-                        <div class="front-cover portfolio-glass-card">
-                            <img src="{{ url_for('static', filename='portfolio/Digital-Branding1.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="Digital Branding Cover" loading="lazy">
-                            <div class="cover-overlay d-flex flex-column align-items-center justify-content-center">
-                                <i class="fa-solid fa-layer-group fs-1 text-white shadow-sm mb-3"></i>
-                                <span class="text-white fw-bold px-4 py-2 rounded-pill" style="letter-spacing: 1px; background: rgba(0,242,255,0.2); border: 1px solid rgba(0,242,255,0.4); backdrop-filter: blur(5px);">تصفح معرض الأعمال</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-none">
-                    {% for i in range(1, 7) %}
-                    <a href="{{ url_for('static', filename='portfolio/Digital-Branding' ~ i ~ '.png') }}" class="glightbox" data-gallery="portfolio-branding" {% if loop.first %}id="branding-trigger"{% endif %}></a>
-                    {% endfor %}
-                </div>
-            </div>
-
-            <!-- General Services -->
-            <div class="tab-pane fade" id="content-general" role="tabpanel">
-                <div class="d-flex justify-content-center align-items-center py-5">
-                    <div class="gallery-stack" onclick="document.getElementById('general-trigger').click()">
-                        <div class="stack-bg stack-bg-3" style="background-image: url('{{ url_for('static', filename='portfolio/service-4.png') }}'); background-size: cover; background-position: center; filter: brightness(0.4);"></div>
-                        <div class="stack-bg stack-bg-2" style="background-image: url('{{ url_for('static', filename='portfolio/service-3.png') }}'); background-size: cover; background-position: center; filter: brightness(0.6);"></div>
-                        <div class="stack-bg stack-bg-1" style="background-image: url('{{ url_for('static', filename='portfolio/service-2.png') }}'); background-size: cover; background-position: center; filter: brightness(0.8);"></div>
-                        <div class="front-cover portfolio-glass-card">
-                            <img src="{{ url_for('static', filename='portfolio/service-1.png') }}" class="w-100 h-100" style="object-fit: cover;" alt="General Services Cover" loading="lazy">
-                            <div class="cover-overlay d-flex flex-column align-items-center justify-content-center">
-                                <i class="fa-solid fa-layer-group fs-1 text-white shadow-sm mb-3"></i>
-                                <span class="text-white fw-bold px-4 py-2 rounded-pill" style="letter-spacing: 1px; background: rgba(0,242,255,0.2); border: 1px solid rgba(0,242,255,0.4); backdrop-filter: blur(5px);">تصفح معرض الأعمال</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-none">
-                    {% for i in range(1, 5) %}
-                    <a href="{{ url_for('static', filename='portfolio/service-' ~ i ~ '.png') }}" class="glightbox" data-gallery="portfolio-general" {% if loop.first %}id="general-trigger"{% endif %}></a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Why Us Section -->
     <section id="why-us" class="container py-5 my-5">
         <div class="text-center">
@@ -390,6 +269,52 @@
         </div>
     </section>
 
+
+    <!-- Our Clients -->
+    <section id="clients" class="container py-5 my-5">
+        <div class="text-center mb-2">
+            <h2 class="section-title" data-i18n="cl_title">أعمالنا وعملاؤنا</h2>
+            <p class="text-muted-custom mt-3" data-i18n="cl_desc">أعمال حقيقية لعملاء حقيقيين — اضغط على أي بطاقة لزيارة العمل المباشر بنفسك.</p>
+        </div>
+        <div class="row g-4 mt-3 justify-content-center">
+            <div class="col-6 col-md-3 hidden-element" data-animation="animate__fadeInUp">
+                <a href="https://dipn-fries-menu.vercel.app/" target="_blank" rel="noopener" class="glass-card text-center p-4 h-100 d-flex flex-column text-decoration-none" style="min-height: 230px;">
+                    <i class="fa-solid fa-burger fs-2 text-primary mb-3 tilt-icon"></i>
+                    <h5 class="fw-bold mb-1 text-white">Dip'n Fries</h5>
+                    <span class="badge rounded-pill mb-2 align-self-center" style="background: rgba(0,242,255,0.1); border: 1px solid rgba(0,242,255,0.3); color: var(--neon-blue); font-weight: 600;" data-i18n="cl1_s">مطاعم</span>
+                    <p class="text-muted-custom small mb-3" data-i18n="cl1_d">قائمة رقمية ثنائية اللغة</p>
+                    <span class="mt-auto fw-bold" style="color: var(--neon-blue);" data-i18n="cl_visit">زيارة العمل ↗</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 hidden-element" data-animation="animate__fadeInUp" data-delay="0.15s">
+                <a href="https://ghadeer-nfc-card.vercel.app" target="_blank" rel="noopener" class="glass-card text-center p-4 h-100 d-flex flex-column text-decoration-none" style="min-height: 230px;">
+                    <i class="fa-solid fa-droplet fs-2 text-info mb-3 tilt-icon"></i>
+                    <h5 class="fw-bold mb-1 text-white">Ghadeer Al-Rawa</h5>
+                    <span class="badge rounded-pill mb-2 align-self-center" style="background: rgba(0,242,255,0.1); border: 1px solid rgba(0,242,255,0.3); color: var(--neon-blue); font-weight: 600;" data-i18n="cl2_s">مياه</span>
+                    <p class="text-muted-custom small mb-3" data-i18n="cl2_d">موقع شركة متكامل</p>
+                    <span class="mt-auto fw-bold" style="color: var(--neon-blue);" data-i18n="cl_visit">زيارة العمل ↗</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 hidden-element" data-animation="animate__fadeInUp" data-delay="0.3s">
+                <a href="https://mazaya-qimam-nfc-card.vercel.app" target="_blank" rel="noopener" class="glass-card text-center p-4 h-100 d-flex flex-column text-decoration-none" style="min-height: 230px;">
+                    <i class="fa-solid fa-shield-halved fs-2 text-success mb-3 tilt-icon"></i>
+                    <h5 class="fw-bold mb-1 text-white">Mazaya Qimam</h5>
+                    <span class="badge rounded-pill mb-2 align-self-center" style="background: rgba(0,242,255,0.1); border: 1px solid rgba(0,242,255,0.3); color: var(--neon-blue); font-weight: 600;" data-i18n="cl3_s">أمن وحراسة</span>
+                    <p class="text-muted-custom small mb-3" data-i18n="cl3_d">موقع تعريفي احترافي</p>
+                    <span class="mt-auto fw-bold" style="color: var(--neon-blue);" data-i18n="cl_visit">زيارة العمل ↗</span>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 hidden-element" data-animation="animate__fadeInUp" data-delay="0.45s">
+                <a href="https://basmah-one.vercel.app/" target="_blank" rel="noopener" class="glass-card text-center p-4 h-100 d-flex flex-column text-decoration-none" style="min-height: 230px;">
+                    <i class="fa-solid fa-shirt fs-2 text-warning mb-3 tilt-icon"></i>
+                    <h5 class="fw-bold mb-1 text-white">Bassmah Style</h5>
+                    <span class="badge rounded-pill mb-2 align-self-center" style="background: rgba(0,242,255,0.1); border: 1px solid rgba(0,242,255,0.3); color: var(--neon-blue); font-weight: 600;" data-i18n="cl4_s">أزياء وستايل</span>
+                    <p class="text-muted-custom small mb-3" data-i18n="cl4_d">هوية وحضور رقمي</p>
+                    <span class="mt-auto fw-bold" style="color: var(--neon-blue);" data-i18n="cl_visit">زيارة العمل ↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Comprehensive Order Modal -->
     <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
@@ -487,7 +412,7 @@
         <div class="container">
             <!-- Bottom Footer Area -->
             <div class="text-center border-top border-white border-opacity-10 pt-5">
-                <p class="mb-4 opacity-75" style="font-size: 1.1rem;"><span data-i18n="ftr_copy">جميع الحقوق محفوظة &copy; 2026 <strong>Genix</strong></span></p>
+                <p class="mb-4 opacity-75" style="font-size: 1.1rem;"><span data-i18n="ftr_copy">جميع الحقوق محفوظة &copy; 2026 <strong>CtrlZCode</strong></span></p>
                 
                 <!-- Simple Developer Credit -->
                 <div class="d-inline-flex flex-column flex-md-row align-items-center justify-content-center gap-2 gap-md-3 py-2 px-4 rounded-pill" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem;">
@@ -495,10 +420,6 @@
                         <span class="text-muted-custom me-1" data-i18n="ftr_r1">Designed & Developed By</span>
                         <strong style="color: #fbbf24; letter-spacing: 0.5px;">Eng. Khaled Al-Ali</strong>
                     </div>
-                    <div class="d-none d-md-block" style="width: 1px; height: 15px; background: rgba(255,255,255,0.2);"></div>
-                    <a href="mailto:genix.team.id@gmail.com" class="text-decoration-none d-flex align-items-center" style="color: var(--neon-blue); transition: 0.3s;" onmouseover="this.style.textShadow='0 0 10px rgba(0,242,255,0.5)'" onmouseout="this.style.textShadow='none'">
-                        <i class="fa-solid fa-envelope mx-2"></i> genix.team.id@gmail.com
-                    </a>
                 </div>
                 
                 <div class="mt-4">
@@ -927,6 +848,7 @@
                 'nav_services': 'خدماتنا',
                 'nav_portfolio': 'المعرض والذكاء الاصطناعي',
                 'nav_why_us': 'لماذا نحن',
+                'nav_clients': 'عملاؤنا',
                 'nav_order': 'اطلب الآن',
                 'hero_title_text': 'تقنيات المستقبل،^نلهم بها الواقع.',
                 'hero_desc': 'نحن نصمم أنظمة وتجارب رقمية متكاملة مدعومة بالذكاء الاصطناعي المتقدم لترتقي بأعمالك إلى آفاق غير مسبوقة.',
@@ -945,6 +867,14 @@
                 'contact_btn': 'تواصل معنا الآن',
                 
                 'why_title': 'لماذا نحن؟',
+                'cl_title': 'أعمالنا وعملاؤنا',
+                'cl_desc': 'أعمال حقيقية لعملاء حقيقيين — اضغط على أي بطاقة لزيارة العمل المباشر بنفسك.',
+                'cl_visit': 'زيارة العمل ↗',
+                'cl_soon': 'قريباً',
+                'cl1_s': 'مطاعم', 'cl1_d': 'قائمة رقمية ثنائية اللغة',
+                'cl2_s': 'مياه', 'cl2_d': 'موقع شركة متكامل',
+                'cl3_s': 'أمن وحراسة', 'cl3_d': 'موقع تعريفي احترافي',
+                'cl4_s': 'أزياء وستايل', 'cl4_d': 'هوية وحضور رقمي',
                 'why_1_title': 'بنية تحتية متطورة',
                 'why_1_desc': 'نقدم حلولاً برمجية متكاملة تعتمد على أحدث تقنيات السحاب والذكاء الاصطناعي لضمان استقرار ونمو أعمالكم.',
                 'why_2_title': 'تشفير وأمان فائق',
@@ -978,7 +908,7 @@
                 'mod_succ_d': 'يسرنا اختيارك لمعايير الجودة التقنية.<br>لقد تم إبلاغ فريق المطورين والإدارة بشكل فوري وسيتم التواصل معك قريباً.',
                 'mod_succ_b': 'العودة للموقع',
                 
-                'ftr_team': 'The Creative Team Behind ID-Genix',
+                'ftr_team': 'The Creative Team Behind CtrlZCode',
                 'ftr_r1': 'Designed & Developed By',
                 'ftr_d1': 'مطور الأنظمة والمسؤول عن كافة الحلول البرمجية المتكاملة.',
                 'ftr_r2': 'Service Management',
@@ -987,13 +917,14 @@
                 'ftr_d3': 'لإنتاج نماذج أتمتة الأعمال والحلول الذكية.',
                 'ftr_r4': 'Content Designer',
                 'ftr_d4': 'للإبداع البصري وصناعة المحتوى الرقمي.',
-                'ftr_copy': 'جميع الحقوق محفوظة &copy; 2026 <strong>Genix</strong>',
+                'ftr_copy': 'جميع الحقوق محفوظة &copy; 2026 <strong>CtrlZCode</strong>',
                 'ftr_admin': 'وصول الإدارة'
             },
             'en': {
                 'nav_services': 'Services',
                 'nav_portfolio': 'Portfolio & AI',
                 'nav_why_us': 'Why Us',
+                'nav_clients': 'Clients',
                 'nav_order': 'Order Now',
                 'hero_title_text': 'Future Technologies,^Inspiring Reality.',
                 'hero_desc': 'We design integrated digital systems and experiences powered by advanced AI to elevate your business to unprecedented heights.',
@@ -1012,6 +943,14 @@
                 'contact_btn': 'Contact Us Now',
                 
                 'why_title': 'Why Us?',
+                'cl_title': 'Our Work & Clients',
+                'cl_desc': 'Real work for real clients — tap any card to visit the live project yourself.',
+                'cl_visit': 'Visit Work ↗',
+                'cl_soon': 'Coming soon',
+                'cl1_s': 'Restaurants', 'cl1_d': 'Bilingual digital menu',
+                'cl2_s': 'Water', 'cl2_d': 'Full company website',
+                'cl3_s': 'Security', 'cl3_d': 'Professional profile site',
+                'cl4_s': 'Fashion', 'cl4_d': 'Brand identity & digital presence',
                 'why_1_title': 'Advanced Infrastructure',
                 'why_1_desc': 'We provide integrated software solutions based on the latest cloud and AI technologies to ensure the stability and growth of your business.',
                 'why_2_title': 'Superior Encryption & Security',
@@ -1045,7 +984,7 @@
                 'mod_succ_d': 'We are pleased you chose our technical quality standards.<br>The development and management team has been notified immediately and will contact you shortly.',
                 'mod_succ_b': 'Return to Site',
                 
-                'ftr_team': 'The Creative Team Behind ID-Genix',
+                'ftr_team': 'The Creative Team Behind CtrlZCode',
                 'ftr_r1': 'Designed & Developed By',
                 'ftr_d1': 'Systems Developer and responsible for all integrated software solutions.',
                 'ftr_r2': 'Service Management',
@@ -1054,13 +993,14 @@
                 'ftr_d3': 'To produce business automation models and smart solutions.',
                 'ftr_r4': 'Content Designer',
                 'ftr_d4': 'For visual creativity and digital content creation.',
-                'ftr_copy': 'All rights reserved &copy; 2026 <strong>Genix</strong>',
+                'ftr_copy': 'All rights reserved &copy; 2026 <strong>CtrlZCode</strong>',
                 'ftr_admin': 'Admin Access'
             },
             'tr': {
                 'nav_services': 'Hizmetlerimiz',
                 'nav_portfolio': 'Portföy & YZ',
                 'nav_why_us': 'Neden Biz',
+                'nav_clients': 'Müşteriler',
                 'nav_order': 'Şimdi Sipariş Ver',
                 'hero_title_text': 'Geleceğin Teknolojileri,^Gerçekliğe İlham Veriyor.',
                 'hero_desc': 'İşletmenizi benzeri görülmemiş yüksekliklere taşımak için gelişmiş yapay zeka tarafından desteklenen entegre dijital sistemler ve deneyimler tasarlıyoruz.',
@@ -1079,6 +1019,14 @@
                 'contact_btn': 'Şimdi İletişime Geçin',
                 
                 'why_title': 'Neden Biz?',
+                'cl_title': 'İşlerimiz & Müşterilerimiz',
+                'cl_desc': 'Gerçek müşteriler için gerçek işler — canlı projeyi görmek için karta dokunun.',
+                'cl_visit': 'Projeyi Gör ↗',
+                'cl_soon': 'Yakında',
+                'cl1_s': 'Restoran', 'cl1_d': 'İki dilli dijital menü',
+                'cl2_s': 'Su', 'cl2_d': 'Kurumsal web sitesi',
+                'cl3_s': 'Güvenlik', 'cl3_d': 'Profesyonel tanıtım sitesi',
+                'cl4_s': 'Moda', 'cl4_d': 'Marka kimliği ve dijital varlık',
                 'why_1_title': 'Gelişmiş Altyapı',
                 'why_1_desc': 'İşletmenizin istikrarını ve büyümesini sağlamak için en son bulut ve YZ teknolojilerine dayalı entegre yazılım çözümleri sunuyoruz.',
                 'why_2_title': 'Üstün Şifreleme ve Güvenlik',
@@ -1112,7 +1060,7 @@
                 'mod_succ_d': 'Teknik kalite standartlarımızı seçtiğiniz için memnunuz.<br>Geliştirme ve yönetim ekibi derhal bilgilendirildi ve kısa süre içinde sizinle iletişime geçecek.',
                 'mod_succ_b': 'Siteye Dön',
                 
-                'ftr_team': 'The Creative Team Behind ID-Genix',
+                'ftr_team': 'The Creative Team Behind CtrlZCode',
                 'ftr_r1': 'Designed & Developed By',
                 'ftr_d1': 'Sistem Geliştirici ve tüm entegre yazılım çözümlerinden sorumlu.',
                 'ftr_r2': 'Service Management',
@@ -1121,7 +1069,7 @@
                 'ftr_d3': 'İş otomasyon modelleri ve akıllı çözümler üretmek.',
                 'ftr_r4': 'Content Designer',
                 'ftr_d4': 'Görsel yaratıcılık ve dijital içerik oluşturma için.',
-                'ftr_copy': 'Tüm hakları saklıdır &copy; 2026 <strong>Genix</strong>',
+                'ftr_copy': 'Tüm hakları saklıdır &copy; 2026 <strong>CtrlZCode</strong>',
                 'ftr_admin': 'Yönetici Erişimi'
             }
         };

@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تسجيل الدخول - ID-Genix</title>
+    <title>تسجيل الدخول - CtrlZCode</title>
     <!-- Switch back to Cairo font as requested -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
@@ -31,22 +31,19 @@
             text-decoration: none;
             margin-bottom: 2rem;
         }
-        .logo-id { 
-            background: linear-gradient(135deg, #00d2ff, #8e44ad);
-            color: white;
-            padding: 2px 10px;
-            border-radius: 8px;
-            font-weight: 900;
-            font-size: 1.6rem;
-            margin-left: 8px;
-            font-family: sans-serif !important;
+        .logo-container { gap: 4px; }
+        .keycap {
+            display: inline-flex; align-items: center; justify-content: center;
+            min-width: 30px; height: 36px; padding: 0 10px;
+            font-family: ui-monospace, "SFMono-Regular", monospace !important;
+            font-weight: 700; font-size: 1.05rem; color: #e8f6ff;
+            background: linear-gradient(180deg, #262633 0%, #14141b 100%);
+            border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 8px;
+            box-shadow: 0 3px 0 rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.18);
+            line-height: 1;
         }
-        .logo-genix { 
-            color: #ffffff; 
-            font-weight: 900; 
-            font-size: 1.7rem; 
-            font-family: sans-serif !important;
-        }
+        .keycap--z { color: #fff; border-color: rgba(0,210,255,0.55); box-shadow: 0 3px 0 rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.18), 0 0 14px rgba(0,210,255,0.35); }
+        .logo-code { color: #fff; font-weight: 900; font-size: 1.7rem; margin-inline-start: 6px; font-family: sans-serif !important; }
 
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
@@ -97,8 +94,8 @@
 </head>
 <body>
     
-    <div class="logo-container">
-        <span class="logo-id">ID</span><span class="logo-genix">Genix</span>
+    <div class="logo-container" dir="ltr">
+        <span class="keycap">Ctrl</span><span class="keycap keycap--z">Z</span><span class="logo-code">Code</span>
     </div>
 
     <div class="glass-panel text-center">
