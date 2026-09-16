@@ -239,6 +239,43 @@
         </div>
     </section>
 
+    <!-- Visual Showcase Section -->
+    <section id="showcase" class="container py-5 my-5 hidden-element" data-animation="animate__fadeInUp">
+        <div class="text-center mb-2">
+            <h2 class="section-title" data-i18n="show_title">نُصمّم ونُبرمج</h2>
+            <p class="text-muted-custom mt-3" data-i18n="show_desc">لمحة بصرية عن الحلول التي نبنيها — من الواجهات إلى الهوية إلى البيانات.</p>
+        </div>
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="showcase-card">
+                    <img src="{{ url_for('static', filename='portfolio/showcase-web.jpg') }}" class="showcase-img" alt="Web & App design" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h5 class="fw-bold mb-1" data-i18n="show_1_title">مواقع وتطبيقات</h5>
+                        <p class="small mb-0" data-i18n="show_1_desc">واجهات حديثة وأنظمة سريعة لأجهزة الويب والجوال.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="showcase-card">
+                    <img src="{{ url_for('static', filename='portfolio/showcase-brand.jpg') }}" class="showcase-img" alt="Brand identity" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h5 class="fw-bold mb-1" data-i18n="show_2_title">الهوية البصرية</h5>
+                        <p class="small mb-0" data-i18n="show_2_desc">هويات رقمية مميزة تبني حضور علامتك التجارية.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="showcase-card">
+                    <img src="{{ url_for('static', filename='portfolio/showcase-data.jpg') }}" class="showcase-img" alt="Data & analytics" loading="lazy">
+                    <div class="showcase-overlay">
+                        <h5 class="fw-bold mb-1" data-i18n="show_3_title">البيانات والتحليل</h5>
+                        <p class="small mb-0" data-i18n="show_3_desc">تحويل بياناتك إلى رؤى ولوحات تحكم ذكية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Us Section -->
     <section id="why-us" class="container py-5 my-5">
         <div class="text-center">
@@ -854,6 +891,14 @@
                 'hero_desc': 'نحن نصمم أنظمة وتجارب رقمية متكاملة مدعومة بالذكاء الاصطناعي المتقدم لترتقي بأعمالك إلى آفاق غير مسبوقة.',
                 'hero_btn': 'استكشف أعمالنا',
                 'services_title': 'الحلول التقنية',
+                'show_title': 'نُصمّم ونُبرمج',
+                'show_desc': 'لمحة بصرية عن الحلول التي نبنيها — من الواجهات إلى الهوية إلى البيانات.',
+                'show_1_title': 'مواقع وتطبيقات',
+                'show_1_desc': 'واجهات حديثة وأنظمة سريعة لأجهزة الويب والجوال.',
+                'show_2_title': 'الهوية البصرية',
+                'show_2_desc': 'هويات رقمية مميزة تبني حضور علامتك التجارية.',
+                'show_3_title': 'البيانات والتحليل',
+                'show_3_desc': 'تحويل بياناتك إلى رؤى ولوحات تحكم ذكية.',
                 'about_title': 'رؤيتنا الإبداعية',
                 'about_desc': 'نسعى لتقديم تجارب بصرية مبهرة تدمج بين الابتكار التقني والتصميم الحديث لترك بصمة لا تُنسى في عالم الأعمال الرقمية. نحن نستلهم من المستقبل لنبني لك واجهة تميزك وتتجاوز التوقعات.',
                 'portfolio_title': 'معرض الأعمال',
@@ -930,6 +975,14 @@
                 'hero_desc': 'We design integrated digital systems and experiences powered by advanced AI to elevate your business to unprecedented heights.',
                 'hero_btn': 'Explore Our Work',
                 'services_title': 'Technical Solutions',
+                'show_title': 'We Design & We Build',
+                'show_desc': 'A visual glimpse of what we build — from interfaces to identity to data.',
+                'show_1_title': 'Websites & Apps',
+                'show_1_desc': 'Modern interfaces and fast systems for web and mobile.',
+                'show_2_title': 'Brand Identity',
+                'show_2_desc': 'Distinctive digital identities that build your brand presence.',
+                'show_3_title': 'Data & Analytics',
+                'show_3_desc': 'Turning your data into insights and smart dashboards.',
                 'about_title': 'Our Creative Vision',
                 'about_desc': 'We strive to deliver stunning visual experiences that blend technical innovation with modern design to leave an unforgettable mark in the digital business world.',
                 'portfolio_title': 'Our Portfolio',
@@ -1006,6 +1059,14 @@
                 'hero_desc': 'İşletmenizi benzeri görülmemiş yüksekliklere taşımak için gelişmiş yapay zeka tarafından desteklenen entegre dijital sistemler ve deneyimler tasarlıyoruz.',
                 'hero_btn': 'Çalışmalarımızı Keşfedin',
                 'services_title': 'Teknik Çözümler',
+                'show_title': 'Tasarlıyor ve Kodluyoruz',
+                'show_desc': 'İnşa ettiğimiz çözümlere görsel bir bakış — arayüzlerden kimliğe, veriye kadar.',
+                'show_1_title': 'Web Siteleri & Uygulamalar',
+                'show_1_desc': 'Web ve mobil için modern arayüzler ve hızlı sistemler.',
+                'show_2_title': 'Marka Kimliği',
+                'show_2_desc': 'Marka varlığınızı güçlendiren özgün dijital kimlikler.',
+                'show_3_title': 'Veri & Analitik',
+                'show_3_desc': 'Verilerinizi içgörülere ve akıllı panellere dönüştürme.',
                 'about_title': 'Yaratıcı Vizyonumuz',
                 'about_desc': 'Dijital iş dünyasında unutulmaz bir iz bırakmak için teknik yeniliği modern tasarımla harmanlayan çarpıcı görsel deneyimler sunmaya çalışıyoruz.',
                 'portfolio_title': 'Portföyümüz',
