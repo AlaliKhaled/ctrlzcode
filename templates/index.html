@@ -121,18 +121,15 @@
     <!-- Hero Section -->
     <section class="hero-section d-flex align-items-stretch" style="min-height: 100vh; position: relative; overflow: hidden; padding-top: 100px; padding-bottom: 40px;">
         <div class="container-fluid px-0 h-100" style="position: relative; z-index: 2;">
-            <div class="row align-items-center flex-column-reverse flex-lg-row-reverse h-100 m-0">
-                <div class="col-lg-6 text-center text-lg-start d-flex flex-column justify-content-center px-4 px-lg-5">
-                    <h1 class="hero-title" id="typewriter-text"><span class="cursor-blink">|</span></h1>
-                    <p class="lead mt-4 mb-5 text-muted-custom animate__animated animate__fadeInUp animate__delay-1s" style="font-size: 1.2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8);" data-i18n="hero_desc">
+            <div class="row align-items-center justify-content-center h-100 m-0">
+                <div class="col-12 col-lg-9 text-center d-flex flex-column justify-content-center px-4 px-lg-5">
+                    <h1 class="hero-title mx-auto" id="typewriter-text"><span class="cursor-blink">|</span></h1>
+                    <p class="lead mt-4 mb-5 text-muted-custom animate__animated animate__fadeInUp animate__delay-1s mx-auto" style="font-size: 1.2rem; text-shadow: 0 2px 10px rgba(0,0,0,0.8); max-width: 720px;" data-i18n="hero_desc">
                         نحن نصمم أنظمة وتجارب رقمية متكاملة مدعومة بالذكاء الاصطناعي المتقدم لترتقي بأعمالك إلى آفاق غير مسبوقة.
                     </p>
                     <div class="animate__animated animate__zoomIn animate__delay-2s">
                         <a href="#clients" class="btn btn-glow"><span data-i18n="hero_btn">استكشف أعمالنا</span> <i class="fa-solid fa-arrow-left ms-2 dir-icon"></i></a>
                     </div>
-                </div>
-                <div class="col-lg-6 text-center px-0 d-flex justify-content-center">
-                    <img src="{{ url_for('static', filename='portfolio/hero-banner.png') }}" alt="Hero Image" class="img-fluid animate__animated animate__fadeIn" style="max-height: 80vh; object-fit: contain; width: auto; max-width: 100%;" fetchpriority="high">
                 </div>
             </div>
         </div>
@@ -406,14 +403,14 @@
     <!-- Contact CTA Section -->
     <style>
         .contact-section-bg {
-            background: url('{{ url_for('static', filename='portfolio/contact.png') }}') center/cover no-repeat;
+            background:
+                radial-gradient(ellipse at 50% 0%, rgba(139, 92, 246, 0.22), transparent 60%),
+                radial-gradient(ellipse at 50% 120%, rgba(0, 210, 255, 0.16), transparent 55%),
+                var(--bg-dark);
             min-height: 50vh;
         }
         @media (max-width: 768px) {
             .contact-section-bg {
-                background-size: 100% auto;
-                background-position: top center;
-                background-color: var(--bg-dark);
                 min-height: 60vh;
             }
             .contact-overlay-mobile {
@@ -430,7 +427,7 @@
         }
     </style>
     <section id="contact-cta" class="contact-section-bg py-5 position-relative mt-5">
-        <div class="position-absolute w-100 h-100 contact-overlay-mobile" style="background: rgba(10, 10, 12, 0.7); top:0; left:0;"></div>
+        <div class="position-absolute w-100 h-100 contact-overlay-mobile" style="background: rgba(10, 10, 12, 0.45); top:0; left:0;"></div>
         <div class="container text-center position-relative d-flex flex-column justify-content-center align-items-center contact-content-mobile" style="z-index: 2; min-height: inherit;">
             <h2 class="section-title text-white contact-title-mobile" data-i18n="contact_title" style="text-shadow: 0 2px 10px rgba(0,0,0,0.8);">هل أنت مستعد للبدء؟</h2>
             <p class="text-white-50 fs-5 mb-5 px-3" data-i18n="contact_desc">تواصل معنا اليوم لتحويل فكرتك إلى واقع تقني ملموس.</p>
@@ -651,11 +648,11 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": { "value": 150, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": ["#e2e8f0", "#cbd5e1", "#94a3b8"] }, // Brand neon priority
+                "color": { "value": ["#8b5cf6", "#c084fc", "#00d2ff"] }, // Brand neon priority
                 "shape": { "type": "circle" },
                 "opacity": { "value": 0.5, "random": true },
                 "size": { "value": 4, "random": true },
-                "line_linked": { "enable": true, "distance": 180, "color": "#cbd5e1", "opacity": 0.4, "width": 1.5 }, // Steady geometry
+                "line_linked": { "enable": true, "distance": 180, "color": "#8b5cf6", "opacity": 0.4, "width": 1.5 }, // Steady geometry
                 "move": { "enable": true, "speed": 2.5, "direction": "none", "random": true, "out_mode": "out" }
             },
             "interactivity": {
@@ -776,7 +773,7 @@
                         ctx.beginPath();
                         ctx.moveTo(cx, cy);
                         ctx.lineTo(link.px, link.py);
-                        ctx.strokeStyle = `rgba(203, 213, 225, ${0.5 * Math.max(0, 1 - link.dist/300000)})`;
+                        ctx.strokeStyle = `rgba(138, 43, 226, ${0.5 * Math.max(0, 1 - link.dist/300000)})`;
                         ctx.lineWidth = 1.5;
                         ctx.stroke();
 
@@ -784,9 +781,9 @@
                         const dotY = cy + (link.py - cy) * offset;
                         ctx.beginPath();
                         ctx.arc(dotX, dotY, 2.5, 0, Math.PI * 2);
-                        ctx.fillStyle = '#f1f5f9';
+                        ctx.fillStyle = '#00d2ff';
                         ctx.shadowBlur = 10;
-                        ctx.shadowColor = '#e2e8f0';
+                        ctx.shadowColor = '#00d2ff';
                         ctx.fill();
                         ctx.shadowBlur = 0;
                     });
